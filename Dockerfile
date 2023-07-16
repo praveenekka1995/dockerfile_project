@@ -1,4 +1,4 @@
-FROM dokken/centos-8
+FROM docker.io/dokken/centos-8:latest
 RUN yum install httpd zip unzip -y
 ADD http://
 WORKDIR /var/www/html
