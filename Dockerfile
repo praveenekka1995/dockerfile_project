@@ -1,6 +1,6 @@
 FROM docker.io/dokken/centos-8:latest
 RUN yum install httpd zip unzip -y
-ADD http://
+ADD http://www.free-css.com/assets/files/free-css-templates/download/page290/brighton.zip /var/www/html
 WORKDIR /var/www/html
 RUN unzip brighton.zip
 RUN rm -rf brighton.zip
