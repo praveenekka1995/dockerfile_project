@@ -4,7 +4,7 @@ ADD http://www.free-css.com/assets/files/free-css-templates/download/page290/bri
 WORKDIR /var/www/html
 RUN unzip brighton.zip
 RUN rm -rf brighton.zip
-RUN cp -rf /root/brighton-html/* .
+RUN cp -rf /root/brighton-html/* /root
 RUN rm -rf brighton-html
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FORGROUND"]
