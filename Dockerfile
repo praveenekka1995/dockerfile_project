@@ -4,7 +4,7 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page293/ve
 WORKDIR /var/www/html
 RUN unzip vertex.zip
 RUN rm -rf vertex.zip
-RUN cp -rf /root/2124_vertex/* /root
+RUN cp -rf 2124_vertex/* .
 RUN rm -rf 2124_vertex
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FORGROUND"]
